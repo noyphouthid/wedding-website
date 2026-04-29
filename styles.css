@@ -451,6 +451,162 @@ button {
   text-align: center;
 }
 
+.stay-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.hotel-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 241, 246, 0.98));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.hotel-photo-placeholder {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: 220px;
+  padding: 18px;
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.56), transparent 30%),
+    linear-gradient(160deg, rgba(235, 180, 198, 0.95), rgba(217, 142, 167, 0.88));
+}
+
+.hotel-photo-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 18px auto;
+  width: 84px;
+  height: 84px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  transform: rotate(10deg);
+}
+
+.hotel-photo-placeholder-alt {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.52), transparent 34%),
+    linear-gradient(160deg, rgba(228, 172, 189, 0.94), rgba(187, 115, 139, 0.92));
+}
+
+.hotel-photo-placeholder-soft {
+  background:
+    radial-gradient(circle at top right, rgba(255, 255, 255, 0.52), transparent 34%),
+    linear-gradient(160deg, rgba(248, 199, 213, 0.98), rgba(231, 158, 181, 0.92));
+}
+
+.hotel-photo-placeholder div {
+  position: relative;
+  z-index: 1;
+  max-width: 210px;
+}
+
+.hotel-photo-placeholder .detail-label,
+.hotel-photo-placeholder h3,
+.hotel-photo-placeholder p {
+  color: #fff;
+}
+
+.hotel-photo-placeholder h3 {
+  margin: 0;
+  font-size: 1.42rem;
+  line-height: 1.2;
+}
+
+.hotel-photo-placeholder p {
+  margin: 10px 0 0;
+  line-height: 1.7;
+  font-size: 0.94rem;
+}
+
+.hotel-body {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+}
+
+.hotel-body h3 {
+  margin: 0;
+  font-size: 1.36rem;
+  line-height: 1.24;
+}
+
+.hotel-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.hotel-topline span {
+  margin: 0;
+  color: var(--accent-deep);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hotel-topline strong {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.hotel-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hotel-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(227, 182, 196, 0.24);
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.3;
+}
+
+.hotel-meta-list {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(227, 182, 196, 0.22);
+}
+
+.hotel-meta-list p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.72;
+  font-size: 0.95rem;
+}
+
+.hotel-meta-list strong {
+  color: var(--text);
+}
+
+.hotel-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.hotel-note {
+  margin-top: 12px;
+}
+
 .site-footer p:first-child {
   font-family: "Omaidy Hand Light", cursive;
   font-size: 2rem;
