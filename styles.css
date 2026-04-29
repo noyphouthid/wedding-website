@@ -572,6 +572,24 @@ button {
   gap: 10px;
 }
 
+.button-whatsapp {
+  gap: 10px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+  box-shadow: 0 16px 30px rgba(37, 211, 102, 0.22);
+}
+
+.button-whatsapp svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.button-whatsapp span {
+  line-height: 1;
+}
+
 .hotel-note {
   margin-top: 12px;
 }
